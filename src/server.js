@@ -1,6 +1,7 @@
 
 import express from "express";
 import cors from "cors";
+import { series } from "./data/series.js";
 
 const app = express();
 const PORT = 3000;
@@ -13,6 +14,12 @@ app.get("/", (req, res) => {
     message: "TV Companion API",
     status: "online"
   });
+});
+
+
+
+app.get("/api/series", (req, res) => {
+  res.json(series);
 });
 
 app.listen(PORT, () => {
