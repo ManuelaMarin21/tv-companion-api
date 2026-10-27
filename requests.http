@@ -1,0 +1,34 @@
+
+### POST de prueba: falta el título
+
+POST http://localhost:3000/api/series
+Content-Type: application/json
+
+{
+  "genre": ["Drama"],
+  "status": "En emisión"
+}
+
+
+###
+//patch ara editar el estatus
+PATCH http://localhost:3000/api/series/3
+Content-Type: application/json
+
+{
+  "status": "Finalizada"
+}
+
+###
+
+//delete eliminar cosas 
+
+
+###
+
+DELETE http://localhost:3000/api/series/2
+
+
+
+
+

@@ -1,4 +1,3 @@
-
 export const series = [
   {
     id: 1,
